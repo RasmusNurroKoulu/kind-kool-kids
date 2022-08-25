@@ -2,7 +2,13 @@
 include('connect.php')?>
 <!DOCTYPE html>
 <html>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
     <style>
         body {
             margin: 0 auto;
@@ -41,14 +47,18 @@ include('connect.php')?>
             font-weight:bold;
         }
 
-		formi {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            padding:50px 0px 10px 0px;
-            color:white;
-            margin: 0 auto;
-            overflow: hidden;
+        formi {
+                position: sticky;
+                top: 0;
+                background-color: white;
+                padding:50px 0px 10px 0px;
+                color:white;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+        html {
+          zoom: .8;
         }
     </style>
 
@@ -59,7 +69,7 @@ include('connect.php')?>
 <body>	
   <nav class="menu">
 	<a href="home.html">Etusivu</a>
-	<a href="uutiset.html">Uutiset</a>
+	<a href="news.html">Uutiset</a>
 	<a href="register.html">Ilmottautuminen</a>
   </nav>
 
@@ -99,6 +109,5 @@ include('connect.php')?>
   </form>
 
 <footer>Copyright 2022 Donnie Kanerva, Rasmus Nurro, Valtteri Kujala</footer>
-
 </body>
 </html>
