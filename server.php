@@ -54,4 +54,3 @@ if (isset($_POST['reg_user'])) {
   	mysqli_query($db, $query);
   	header('location: index.php');
   }
-}
