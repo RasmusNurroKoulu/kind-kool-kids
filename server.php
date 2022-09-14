@@ -49,7 +49,7 @@ if (isset($_POST['reg_user'])) {
   }
 
   // Finally, register user if there are no errors in the form
-  	$query = "INSERT INTO users (tunnisteetunimi, sukunimi, email, koulutalo, kurssi) 
+  	$query = "INSERT INTO users (tunniste, etunimi, sukunimi, email, koulutalo, kurssi) 
   			  VALUES(NULL, '$etunimi', '$sukunimi', '$email', '$koulutalo', '$kurssi', '$texti')";
   	mysqli_query($db, $query);
   	header('location: index.php');
