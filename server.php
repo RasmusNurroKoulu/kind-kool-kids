@@ -12,7 +12,7 @@ $texti = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = mysqli_connect('localhost', 'root', '', 'donnie3v');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -49,8 +49,8 @@ if (isset($_POST['reg_user'])) {
   }
 
   // Finally, register user if there are no errors in the form
-  	$query = "INSERT INTO users (etunimi, sukunimi, email, koulutalo, kurssi) 
+  	$query = "INSERT INTO users (etunimi, sukunimi, email, koulutalo, kurssi, texti) 
   			  VALUES('$etunimi', '$sukunimi', '$email', '$koulutalo', '$kurssi', '$texti')";
   	mysqli_query($db, $query);
-  	header('location: index.php');
+  	header('location: registration.php');
   }
