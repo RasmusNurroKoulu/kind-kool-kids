@@ -49,8 +49,8 @@ if (isset($_POST['reg_user'])) {
   }
 
   // Finally, register user if there are no errors in the form
-  	$query = "INSERT INTO users (etunimi, sukunimi, email, koulutalo, kurssi, texti) 
-  			  VALUES('$etunimi', '$sukunimi', '$email', '$koulutalo', '$kurssi', '$texti')";
+  	$query = "INSERT INTO users (tunniste, etunimi, sukunimi, email, koulutalo, kurssi, texti) 
+  			  VALUES(NULL, '$etunimi', '$sukunimi', '$email', '$koulutalo', '$kurssi', '$texti')";
   	mysqli_query($db, $query);
-  	header('location: registration.php');
+  	header('location: register.php');
   }
